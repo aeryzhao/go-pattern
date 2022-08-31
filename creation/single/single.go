@@ -26,3 +26,11 @@ func getInstance() *single {
 	}
 	return instance
 }
+
+func main() {
+	for i := 0; i < 20; i++ {
+		go getInstance()
+	}
+
+	fmt.Scanln()
+}
