@@ -72,6 +72,8 @@
 ![单例模式](./assets/single.png)
 
 ### 结构型模式
+#### 适配器模式（adapter）
+![适配器模式](./assets/adapter.png)
 
 ### 行为型模式
 #### 策略模式（strategy）
