@@ -74,6 +74,9 @@
 ### 结构型模式
 #### 适配器模式（adapter）
 ![适配器模式](./assets/adapter.png)
+#### 桥接模式（bridge）
+![桥接模式](./assets/bridge.png)
+
 
 ### 行为型模式
 #### 策略模式（strategy）
