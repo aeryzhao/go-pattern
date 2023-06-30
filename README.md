@@ -76,7 +76,9 @@
 ![适配器模式](./assets/adapter.png)
 #### 桥接模式（bridge）
 ![桥接模式](./assets/bridge.png)
-
+#### 组合模式 （component）
+![组合模式](./assets/component.png)
+将部分-整体的层次结构应用到对象中，使得用户对单个对象和组合对象的使用具有一致性。
 
 ### 行为型模式
 #### 策略模式（strategy）
