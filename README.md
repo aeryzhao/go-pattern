@@ -79,6 +79,9 @@
 #### 组合模式 （component）
 ![组合模式](./assets/component.png)
 将部分-整体的层次结构应用到对象中，使得用户对单个对象和组合对象的使用具有一致性。
+#### 装饰模式（decorator）
+![装饰模式](./assets/decorator.png)
+动态的给一个对象添加一些额外的职责。
 
 ### 行为型模式
 #### 策略模式（strategy）
