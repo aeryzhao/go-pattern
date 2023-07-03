@@ -96,7 +96,8 @@
 #### 责任链模式（chain of responsibility）
 ![责任链模式](./assets/chain.png)
 收到请求后，可以选择处理或者转发给下一个处理者，并沿着这条链传递改请求，直到有一个对象处理它为止。
-
+#### 命令模式（command）
+![命令模式](./assets/command.png)
 
 
 
