@@ -82,6 +82,8 @@
 #### 外观模式（facade）
 ![外观模式](./assets/facade.png)
 从复杂子系统中抽离出简单接口。
+#### 享元模式（flyweight）
+![享元模式](./assets/flyweight.png)
 
 ### 行为型模式
 #### 策略模式（strategy）
