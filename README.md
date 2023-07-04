@@ -104,6 +104,8 @@
 #### 中介者模式（mediator）
 ![中介者模式](./assets/mediator.png)
 组件通过特殊的中介者对象进行沟通，达到减少组件之间以来关系的目的。
+#### 观察者模式（observer）
+![观察者模式](./assets/observer.png)
 
 
 
