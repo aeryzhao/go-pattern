@@ -6,32 +6,32 @@ type subject interface {
 	notifyAll()
 }
 
-type item struct {
+type goods struct {
 	observerList []observer
 	name         string
 	inStock      bool
 }
 
-func newItem(name string) *item {
-	return &item{
+func newgoods(name string) *goods {
+	return &goods{
 		name: name,
 	}
 }
 
-func (i *item) updateAvailability() {
-	println("Item availability changed to: ", i.inStock)
+func (i *goods) updateAvailability() {
+	println("goods availability changed to: ", i.inStock)
 	i.notifyAll()
 }
 
-func (i *item) register(o observer) {
+func (i *goods) register(o observer) {
 	i.observerList = append(i.observerList, o)
 }
 
-func (i *item) deregister(o observer) {
+func (i *goods) deregister(o observer) {
 	i.observerList = removeFromSlice(i.observerList, o)
 }
 
-func (i *item) notifyAll() {
+func (i *goods) notifyAll() {
 	for _, observer := range i.observerList {
 		observer.update(i.name)
 	}
@@ -57,8 +57,8 @@ type customer struct {
 	id string
 }
 
-func (c *customer) update(itemName string) {
-	println("Sending email to customer ", c.id, " for item ", itemName)
+func (c *customer) update(goodsName string) {
+	println("Sending email to customer ", c.id, " for goods ", goodsName)
 }
 
 func (c *customer) getID() string {
@@ -67,13 +67,13 @@ func (c *customer) getID() string {
 
 func main() {
 
-	shirtItem := newItem("Nike Shirt")
+	shirtgoods := newgoods("Nike Shirt")
 
 	observerFirst := &customer{id: "abc@gmail.com"}
 	observerSecond := &customer{id: "xyz@gmail.com"}
 
-	shirtItem.register(observerFirst)
-	shirtItem.register(observerSecond)
+	shirtgoods.register(observerFirst)
+	shirtgoods.register(observerSecond)
 
-	shirtItem.updateAvailability()
+	shirtgoods.updateAvailability()
 }
