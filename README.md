@@ -11,7 +11,7 @@
 |---|---|---|
 |菱形实线箭头|聚合|组合|
 
-![UML类图示例](./assets/UML类图示例.png)
+![UML类图示例](./assets/UML.png)
 ## 面向对象原则
 ### 单一职责原则
 单一职责原则（Single Responsibility Principle），应该有且仅有一个原因引起类的变更。
